@@ -1,0 +1,9 @@
+[
+    {
+        "usecase": "delete_single_book_from_collection",
+        "payload" : {
+            "userId": "f7d2901e-1b4c-4f3d-8e2e-2a5f3c3e8f9a",
+            "isbn": "9781593277574"
+        }
+    }
+]

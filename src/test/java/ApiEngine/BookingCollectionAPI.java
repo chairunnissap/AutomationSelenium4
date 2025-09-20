@@ -1,14 +1,13 @@
+package ApiEngine;
+import java.util.List;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import io.restassured.response.Response;
 
-import java.util.List;
-
-public class RestAssuredImplTODO {
-
+public class BookingCollectionAPI {
     String token;
 
     @BeforeClass
@@ -265,5 +264,4 @@ public class RestAssuredImplTODO {
         .then()
             .statusCode(404);
     }
-
 }
