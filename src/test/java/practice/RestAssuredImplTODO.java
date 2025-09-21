@@ -1,4 +1,4 @@
-package Scenario;
+package practice;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;

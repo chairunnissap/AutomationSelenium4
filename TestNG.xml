@@ -6,7 +6,9 @@
             <classes>
                 <!-- <class name="LifeCycleExample" /> -->
                 <!-- <class name="RestAssuredImpl" /> -->
-                <class name="RestAssuredImplTODO" />
+                <!-- <class name="RestAssuredImplTODO" /> -->
+                <class name="api.example.base.Base"/>
+                <class name="Scenario.CreateBooking" />
             </classes>
         </test>
     </suite>

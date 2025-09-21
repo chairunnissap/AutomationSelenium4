@@ -1,0 +1,12 @@
+Scenario\GetBooking.class
+Scenario\UpdateBooking_Partial.class
+practice\RestAssuredImplAdv.class
+Scenario\CreateBooking.class
+Scenario\GetBookingIdsByDate.class
+Scenario\GetBookingIdsByName.class
+practice\RestAssuredImpl.class
+Scenario\DeleteBooking.class
+Scenario\UpdateBooking.class
+practice\RestAssuredImplTODO.class
+ApiEngine\BookingCollectionAPI.class
+Scenario\GetBookingIds.class

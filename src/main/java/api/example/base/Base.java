@@ -7,22 +7,23 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import io.restassured.RestAssured;
 
-public class Main {
+public class Base {
     
-    public static String token, baseURI;
+    public static String token, baseLink;
 
     @BeforeSuite
     public void beforeSuite(){
         System.out.println("This is Before Suite");
         token = TokenManager.getToken();
-        baseURI = Helper.getKey("baseUri");
+        baseLink = Helper.getKey("BASE_URI");
+        System.out.println("Base URI: " + baseLink);
     }
 
     @BeforeMethod
     public void setupRequestSpecification(){
         System.out.println("This is Before Method");
         RestAssured.requestSpecification = given()
-                                            .baseUri(baseURI)
+                                            .baseUri(baseLink)
                                             .header("Content-Type", "application/json")
                                             .header("Authorization", "Bearer " + token); 
     }
