@@ -1,4 +1,4 @@
-package Scenario;
+package Scenario.Positif;
 import java.util.List;
 import org.testng.annotations.Test;
 import ApiEngine.BookingCollectionAPI;
@@ -6,17 +6,17 @@ import io.restassured.response.Response;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class GetBookingIdsByDate {
+public class GetBookingIdsByName {
     @Test
-    public void GetBookingIdsByDateScen() {
-        Response response = BookingCollectionAPI.GetBookingIdsByDateColl();
-
+    public void GetBookingIdsByNameScen() {
+        Response response = BookingCollectionAPI.GetBookingIdsByNameColl();
+            
         response.then()
             .statusCode(200);
-            
-        // Ambil list booking id berdasarkan filter tanggal
+
+        // Ambil list booking id berdasarkan filter nama
         List<Integer> bookingIds = response.jsonPath().getList("bookingid");
-        System.out.println("Booking Ids by tanggal : " + bookingIds);
+        System.out.println("Booking Ids untuk Chairun Puspitasari: " + bookingIds);
         assertThat(bookingIds, is(notNullValue()));
     }
 }

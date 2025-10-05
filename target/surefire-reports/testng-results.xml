@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-05T17:20:44 WIB" name="Annotation Execution Suite" finished-at="2025-10-05T17:20:45 WIB" duration-ms="1611">
+  <suite started-at="2025-10-05T22:44:47 WIB" name="Annotation Execution Suite" finished-at="2025-10-05T22:44:49 WIB" duration-ms="1821">
     <groups>
     </groups>
-    <test started-at="2025-10-05T17:20:44 WIB" name="MyTestGroup" finished-at="2025-10-05T17:20:45 WIB" duration-ms="1611">
+    <test started-at="2025-10-05T22:44:47 WIB" name="MyTestGroup" finished-at="2025-10-05T22:44:49 WIB" duration-ms="1821">
       <class name="api.example.base.Base">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:api.example.base.Base@72057ecf]" started-at="2025-10-05T17:20:36 WIB" name="beforeSuite" finished-at="2025-10-05T17:20:44 WIB" duration-ms="7957" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:api.example.base.Base@dbf57b3]" started-at="2025-10-05T22:44:43 WIB" name="beforeSuite" finished-at="2025-10-05T22:44:47 WIB" duration-ms="3831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
       </class> <!-- api.example.base.Base -->
-      <class name="Scenario.CreateBooking">
-        <test-method signature="CreateBookingScen()[pri:0, instance:Scenario.CreateBooking@4d9e68d0]" started-at="2025-10-05T17:20:44 WIB" name="CreateBookingScen" finished-at="2025-10-05T17:20:45 WIB" duration-ms="1554" status="PASS">
+      <class name="Scenario.Positif.CreateBooking">
+        <test-method signature="CreateBookingScen()[pri:0, instance:Scenario.Positif.CreateBooking@130c12b7]" started-at="2025-10-05T22:44:47 WIB" name="CreateBookingScen" finished-at="2025-10-05T22:44:49 WIB" duration-ms="1767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateBookingScen -->
-      </class> <!-- Scenario.CreateBooking -->
+      </class> <!-- Scenario.Positif.CreateBooking -->
     </test> <!-- MyTestGroup -->
   </suite> <!-- Annotation Execution Suite -->
 </testng-results>

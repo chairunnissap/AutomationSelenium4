@@ -1,4 +1,4 @@
-package Scenario;
+package Scenario.Positif;
 import api.example.base.Base;
 import org.testng.annotations.Test;
 

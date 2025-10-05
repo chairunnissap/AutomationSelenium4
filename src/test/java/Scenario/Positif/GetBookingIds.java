@@ -1,4 +1,4 @@
-package Scenario;
+package Scenario.Positif;
 import java.util.List;
 import org.testng.annotations.Test;
 import ApiEngine.BookingCollectionAPI;

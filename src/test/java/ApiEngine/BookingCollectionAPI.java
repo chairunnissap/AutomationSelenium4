@@ -2,7 +2,6 @@ package ApiEngine;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
 import api.example.base.Base;
-import org.testng.annotations.Test;
 
 public class BookingCollectionAPI extends Base{
     
@@ -59,14 +58,14 @@ public class BookingCollectionAPI extends Base{
         return response;
     }
 
-    public Response CreateBookingColl (String requestBody){
+    public static <T> Response CreateBookingColl (T payload){
         Response response = 
         given()
             .baseUri(Base.baseLink)
             .basePath("/booking")
             .header("Content-Type", "application/json")
             .header("Accept", "application/json")
-            .body(requestBody)
+            .body(payload).log().all()
         .when()
             .post();
         
@@ -99,11 +98,38 @@ public class BookingCollectionAPI extends Base{
         return response;
     }
 
+    public Response NUpdateBookingPartialColl(String requestBody, String token){
+        Response response =
+            given()
+                .baseUri(Base.baseLink)
+                .basePath("/booking/{id}")
+                .pathParam("id", 0)
+                .body(requestBody)
+            .when()
+                .patch();
+
+        return response;
+    }
+
     public Response DeleteBookingColl(String token){
         Response response =
             given()
                 .basePath("/booking/{id}")
                 .pathParam("id", 2)
+            .when()
+                .delete()
+            .then()
+            .log().all()
+            .extract().response();
+
+        return response;
+    }
+
+    public Response NDeleteBookingColl(String token){
+        Response response =
+            given()
+                .basePath("/booking/{id}")
+                .pathParam("id", 0)
             .when()
                 .delete()
             .then()

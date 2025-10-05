@@ -1,4 +1,4 @@
-package Scenario;
+package Scenario.Positif;
 import org.testng.annotations.Test;
 import ApiEngine.BookingCollectionAPI;
 import io.restassured.response.Response;

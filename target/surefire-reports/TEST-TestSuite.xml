@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="10.382" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.747" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\chair\AppData\Local\Temp\surefire13440341700996365578\surefirebooter-20251005172035129_3.jar C:\Users\chair\AppData\Local\Temp\surefire13440341700996365578 2025-10-05T17-20-34_790-jvmRun1 surefire-20251005172035129_1tmp surefire_0-20251005172035129_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\chair\AppData\Local\Temp\surefire5817920350592891039\surefirebooter-20251005224442057_3.jar C:\Users\chair\AppData\Local\Temp\surefire5817920350592891039 2025-10-05T22-44-41_792-jvmRun1 surefire-20251005224442057_1tmp surefire_0-20251005224442057_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\chair\OneDrive - Badr Interactive\Documents\java\apibatch41\target\test-classes;C:\Users\chair\OneDrive - Badr Interactive\Documents\java\apibatch41\target\classes;C:\Users\chair\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\chair\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\chair\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\chair\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\chair\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\chair\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\chair\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\chair\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\chair\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\chair\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\chair\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\chair\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\chair\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\chair\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\chair\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\chair\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\chair\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\chair\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\chair\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\chair\.m2\repository\io\github\cdimascio\java-dotenv\5.2.2\java-dotenv-5.2.2.jar;C:\Users\chair\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.0\kotlin-stdlib-1.4.0.jar;C:\Users\chair\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.0\kotlin-stdlib-common-1.4.0.jar;C:\Users\chair\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\chair\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.0\jackson-databind-2.20.0.jar;C:\Users\chair\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\chair\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.0\jackson-core-2.20.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\chair\AppData\Local\Temp\surefire13440341700996365578\surefirebooter-20251005172035129_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\chair\AppData\Local\Temp\surefire5817920350592891039\surefirebooter-20251005224442057_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
@@ -56,22 +56,45 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="CreateBookingScen" classname="Scenario.CreateBooking" time="1.559">
+  <testcase name="CreateBookingScen" classname="Scenario.Positif.CreateBooking" time="1.769">
     <system-out><![CDATA[This is Before Suite
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Chairun",
+    "lastname": "Puspitasari",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-09-01",
+        "checkout": "2025-09-17"
+    },
+    "additionalneeds": "Breakfast"
+}
 HTTP/1.1 200 OK
-Content-Length: 205
+Content-Length: 207
 Content-Type: application/json; charset=utf-8
-Date: Sun, 05 Oct 2025 10:20:46 GMT
-Etag: W/"cd-p4XEIl0Gi9U05i6XXcKdiujaXyA"
+Date: Sun, 05 Oct 2025 15:44:49 GMT
+Etag: W/"cf-xeTMO6EMYdhyxTfwcvWR9IyDO30"
 Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=wW46ve8y1zdvGoTFJJY863%2FEdU25VnEIQxyB%2ForAEn0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1759659646"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=wW46ve8y1zdvGoTFJJY863%2FEdU25VnEIQxyB%2ForAEn0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1759659646"
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=79U4ObvbMLQiqhIYuH8BN%2BwT5LTsK70ZcJalFyKc1yM%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1759679089"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=79U4ObvbMLQiqhIYuH8BN%2BwT5LTsK70ZcJalFyKc1yM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1759679089"
 Server: Heroku
 Via: 1.1 heroku-router
 X-Powered-By: Express
 
 {
-    "bookingid": 27,
+    "bookingid": 2136,
     "booking": {
         "firstname": "Chairun",
         "lastname": "Puspitasari",
@@ -84,7 +107,7 @@ X-Powered-By: Express
         "additionalneeds": "Breakfast"
     }
 }
-Booking ID baru: 27
+Booking ID baru: 2136
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
