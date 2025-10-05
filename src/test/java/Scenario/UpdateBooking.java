@@ -7,7 +7,6 @@ import static org.hamcrest.Matchers.*;
 import api.example.base.Base;
 
 public class UpdateBooking extends Base {
-    public String token;
     public BookingCollectionAPI bookingCollectionAPI = new BookingCollectionAPI();
 
     @Test

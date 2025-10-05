@@ -7,8 +7,15 @@
                 <!-- <class name="LifeCycleExample" /> -->
                 <!-- <class name="RestAssuredImpl" /> -->
                 <!-- <class name="RestAssuredImplTODO" /> -->
-                <class name="api.example.base.Base"/>
+                <class name="api.example.base.Base" />
                 <class name="Scenario.CreateBooking" />
+                <!-- <class name="Scenario.DeleteBooking" /> -->
+                <!-- <class name="Scenario.GetBooking" /> -->
+                <!-- <class name="Scenario.GetBookingIds" /> -->
+                <!-- <class name="Scenario.GetBookingIdsByDate" /> -->
+                <!-- <class name="Scenario.GetBookingIdsByName" /> -->
+                <!-- <class name="Scenario.UpdateBooking_Partial" /> -->
+                <!-- <class name="Scenario.UpdateBooking" /> -->
             </classes>
         </test>
     </suite>

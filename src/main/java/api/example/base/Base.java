@@ -16,7 +16,8 @@ public class Base {
         System.out.println("This is Before Suite");
         token = TokenManager.getToken();
         baseLink = Helper.getKey("BASE_URI");
-        System.out.println("Base URI: " + baseLink);
+        // System.out.println("Base URI: " + baseLink);
+        // System.out.println("Generate Token "+token);
     }
 
     @BeforeMethod
@@ -25,7 +26,9 @@ public class Base {
         RestAssured.requestSpecification = given()
                                             .baseUri(baseLink)
                                             .header("Content-Type", "application/json")
-                                            .header("Authorization", "Bearer " + token); 
+                                            .header("Accept", "application/json")
+                                            .header("Cookie", "token="+ token)
+                                            .header("Authorization", "Basic " + token);
     }
 
     @AfterMethod

@@ -1,5 +1,5 @@
 package Scenario;
-
+import api.example.base.Base;
 import org.testng.annotations.Test;
 
 import ApiEngine.BookingCollectionAPI;
@@ -7,8 +7,7 @@ import io.restassured.response.Response;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class UpdateBooking_Partial {
-    public String token;
+public class UpdateBooking_Partial extends Base{
     public BookingCollectionAPI bookingCollectionAPI = new BookingCollectionAPI();;
 
     @Test

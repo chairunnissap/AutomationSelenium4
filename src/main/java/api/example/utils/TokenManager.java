@@ -7,14 +7,16 @@ public class TokenManager {
     public static String token;
 
     public static String getToken() {
+        
         if (token == null) {
             token = generate_token();
         }
         return token;
+        
     }
 
     public static String generate_token(){
-        System.out.println("Generate Token");
+        
         String requestBody = "{\n" + //
                         "  \"username\": \"admin\",\n" + //
                         "  \"password\": \"password123\"\n" + //

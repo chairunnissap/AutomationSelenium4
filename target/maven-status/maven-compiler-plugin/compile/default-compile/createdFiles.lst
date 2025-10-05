@@ -1,3 +1,8 @@
-api\example\utils\TokenManager.class
-api\example\base\Base.class
 api\example\utils\Helper.class
+api\example\model\response\ResCreateBooking$BookingDates.class
+api\example\model\response\ResCreateBooking$Booking.class
+api\example\model\request\ReqCreateBooking$BookingDates.class
+api\example\model\request\ReqCreateBooking.class
+api\example\utils\TokenManager.class
+api\example\model\response\ResCreateBooking.class
+api\example\base\Base.class

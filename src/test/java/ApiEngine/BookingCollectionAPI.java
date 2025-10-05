@@ -2,13 +2,14 @@ package ApiEngine;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
 import api.example.base.Base;
+import org.testng.annotations.Test;
 
 public class BookingCollectionAPI extends Base{
     
     public static Response GetBookingIdsColl(){
         Response response =
         given()
-            .baseUri(baseLink)
+            .baseUri(Base.baseLink)
             .basePath("/booking")
             .header("Content-Type", "application/json")
         .when()
@@ -20,7 +21,7 @@ public class BookingCollectionAPI extends Base{
     public static Response GetBookingIdsByNameColl(){
         Response response = 
         given()
-            .baseUri(baseLink)
+            .baseUri(Base.baseLink)
             .basePath("/booking")
             .header("Content-Type", "application/json")
             .queryParam("firstname", "Chairun")
@@ -34,7 +35,7 @@ public class BookingCollectionAPI extends Base{
     public static Response GetBookingIdsByDateColl(){
         Response response = 
         given()
-            .baseUri(baseLink)
+            .baseUri(Base.baseLink)
             .basePath("/booking")
             .header("Content-Type", "application/json")
             .queryParam("checkin", "2015-12-13")
@@ -48,7 +49,7 @@ public class BookingCollectionAPI extends Base{
     public static Response GetBookingColl(){
         Response response = 
         given()
-            .baseUri(baseLink)
+            .baseUri(Base.baseLink)
             .basePath("/booking/{id}")
             .pathParam("id", 3)
             .header("Accept", "application/json")
@@ -75,13 +76,9 @@ public class BookingCollectionAPI extends Base{
     public Response UpdateBookingColl(String requestBody, String token){
         Response response =
             given()
-                .baseUri(baseLink)
+                .baseUri(Base.baseLink)
                 .basePath("/booking/{id}")
                 .pathParam("id", 857)
-                .header("Content-Type", "application/json")
-                .header("Accept", "application/json")
-                .header("Cookie", "token="+ token)
-                .header("Authorization", "Basic " + token)
                 .body(requestBody)
             .when()
                 .put();
@@ -92,13 +89,9 @@ public class BookingCollectionAPI extends Base{
     public Response UpdateBookingPartialColl(String requestBody, String token){
         Response response =
             given()
-                .baseUri(baseLink)
+                .baseUri(Base.baseLink)
                 .basePath("/booking/{id}")
-                .pathParam("id", 2)
-                .header("Content-Type", "application/json")
-                .header("Accept", "application/json")
-                .header("Cookie", "token="+ token)
-                .header("Authorization", "Basic " + token)
+                .pathParam("id", 3)
                 .body(requestBody)
             .when()
                 .patch();
@@ -109,15 +102,13 @@ public class BookingCollectionAPI extends Base{
     public Response DeleteBookingColl(String token){
         Response response =
             given()
-                .baseUri(baseLink)
                 .basePath("/booking/{id}")
                 .pathParam("id", 2)
-                .header("Content-Type", "application/json")
-                .header("Accept", "application/json")
-                .header("Cookie", "token="+ token)
-                .header("Authorization", "Basic " + token)
             .when()
-                .delete();
+                .delete()
+            .then()
+            .log().all()
+            .extract().response();
 
         return response;
     }
