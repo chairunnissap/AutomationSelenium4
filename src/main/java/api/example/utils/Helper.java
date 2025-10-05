@@ -1,11 +1,7 @@
 package api.example.utils;
 import java.io.File;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-
 import io.github.cdimascio.dotenv.Dotenv;
 import io.restassured.response.Response;
 
