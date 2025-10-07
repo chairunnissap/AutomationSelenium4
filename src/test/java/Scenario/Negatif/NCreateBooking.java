@@ -2,11 +2,9 @@ package Scenario.Negatif;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.not;
-
 import org.testng.annotations.Test;
 import ApiEngine.BookingCollectionAPI;
 import api.example.model.request.ReqNCreateBooking;
-import api.example.model.response.ResCreateBooking;
 import api.example.model.response.ResNCreateBooking;
 import api.example.utils.Helper;
 import io.restassured.response.Response;
