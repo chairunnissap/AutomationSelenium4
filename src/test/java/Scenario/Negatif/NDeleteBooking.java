@@ -8,7 +8,6 @@ public class NDeleteBooking extends Base{
 
     public BookingCollectionAPI bookingCollectionAPI = new BookingCollectionAPI();
 
-    // @Test(dependsOnMethods = {"CreateBooking"})
     @Test
     public void NDeleteBookingScen() {
         Response response = bookingCollectionAPI.NDeleteBookingColl(token);

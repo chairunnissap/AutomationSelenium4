@@ -1,11 +1,52 @@
-{
-    "firstname": "Chairun",
-    "lastname": "Puspitasari",
-    "totalprice": 222,
-    "depositpaid": true,
-    "bookingdates": {
-        "checkin": "2025-09-02",
-        "checkout": "2025-09-18"
+[
+    {
+        "usecase" : "UpdateBooking1",
+        "payload" : {
+            "firstname": "Chairun",
+            "lastname": "Puspitasari",
+            "totalprice": 222,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-02",
+                "checkout": "2025-09-18"
+            },
+            "additionalneeds": "Gym"
+        },
+        "expectedValue": {
+            "firstname": "Chairun",
+            "lastname": "Puspitasari",
+            "totalprice": 222,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-02",
+                "checkout": "2025-09-18"
+            },
+            "additionalneeds": "Gym"
+        }
     },
-    "additionalneeds": "Gym"
-}
+    {
+        "usecase" : "UpdateBooking2",
+        "payload" : {
+            "firstname": "Icha",
+            "lastname": "Puspitasari",
+            "totalprice": 444,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-02",
+                "checkout": "2025-09-18"
+            },
+            "additionalneeds": "Swim"
+        },
+        "expectedValue": {
+            "firstname": "Icha",
+            "lastname": "Puspitasari",
+            "totalprice": 444,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-02",
+                "checkout": "2025-09-18"
+            },
+            "additionalneeds": "Swim"
+        }
+    }
+]

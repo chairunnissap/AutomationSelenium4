@@ -1,0 +1,38 @@
+[
+    {
+        "usecase" : "UpdateBookingPartial1",
+        "payload" : {
+            "firstname" : "Chalay",
+            "lastname" : "Imoet"
+            },
+        "expectedValue": {
+            "firstname": "Chalay",
+            "lastname": "Imoet",
+            "totalprice": 224,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2018-04-18",
+                "checkout": "2019-11-08"
+            },
+            "additionalneeds": "Breakfast"
+        }
+    },
+    {
+        "usecase" : "UpdateBookingPartial2",
+        "payload" : {
+            "firstname" : "iphan",
+            "lastname" : "Imoet"
+            },
+        "expectedValue": {
+            "firstname": "iphan",
+            "lastname": "Imoet",
+            "totalprice": 224,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2018-04-18",
+                "checkout": "2019-11-08"
+            },
+            "additionalneeds": "Breakfast"
+        }
+    }
+]

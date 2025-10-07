@@ -7,10 +7,7 @@ public class BookingCollectionAPI extends Base{
     
     public static Response GetBookingIdsColl(){
         Response response =
-        given()
-            .baseUri(Base.baseLink)
-            .basePath("/booking")
-            .header("Content-Type", "application/json")
+            Base.getRequestSpec()
         .when()
             .get();
         
@@ -19,10 +16,7 @@ public class BookingCollectionAPI extends Base{
 
     public static Response GetBookingIdsByNameColl(){
         Response response = 
-        given()
-            .baseUri(Base.baseLink)
-            .basePath("/booking")
-            .header("Content-Type", "application/json")
+            Base.getRequestSpec()
             .queryParam("firstname", "Chairun")
             .queryParam("lastname", "Puspitasari")
         .when()
@@ -33,10 +27,7 @@ public class BookingCollectionAPI extends Base{
 
     public static Response GetBookingIdsByDateColl(){
         Response response = 
-        given()
-            .baseUri(Base.baseLink)
-            .basePath("/booking")
-            .header("Content-Type", "application/json")
+            Base.getRequestSpec()
             .queryParam("checkin", "2015-12-13")
             .queryParam("checkout", "2019-09-18")
         .when()
@@ -60,10 +51,7 @@ public class BookingCollectionAPI extends Base{
 
     public static <T> Response CreateBookingColl (T payload){
         Response response = 
-        given()
-            .baseUri(Base.baseLink)
-            .basePath("/booking")
-            .header("Content-Type", "application/json")
+            Base.getRequestSpec()
             .header("Accept", "application/json")
             .body(payload).log().all()
         .when()
@@ -72,39 +60,63 @@ public class BookingCollectionAPI extends Base{
         return response;
     }
 
-    public Response UpdateBookingColl(String requestBody, String token){
+    public static <T> Response NCreateBookingColl (T payload){
+        Response response = 
+            Base.getRequestSpec()
+            .header("Accept", "application/json")
+            .body(payload).log().all()
+        .when()
+            .post();
+        
+        return response;
+    }
+
+    public <T> Response UpdateBookingColl(T payload, String token){
         Response response =
             given()
                 .baseUri(Base.baseLink)
                 .basePath("/booking/{id}")
-                .pathParam("id", 857)
-                .body(requestBody)
+                .pathParam("id", 6)
+                .body(payload)
             .when()
                 .put();
 
         return response;
     }
 
-    public Response UpdateBookingPartialColl(String requestBody, String token){
+    public <T> Response NUpdateBookingColl(T payload, String token){
+        Response response =
+            given()
+                .baseUri(Base.baseLink)
+                .basePath("/booking/{id}")
+                .pathParam("id", 0)
+                .body(payload)
+            .when()
+                .put();
+
+        return response;
+    }
+
+    public <T> Response UpdateBookingPartialColl(T payload, String token){
         Response response =
             given()
                 .baseUri(Base.baseLink)
                 .basePath("/booking/{id}")
                 .pathParam("id", 3)
-                .body(requestBody)
+                .body(payload)
             .when()
                 .patch();
 
         return response;
     }
 
-    public Response NUpdateBookingPartialColl(String requestBody, String token){
+    public <T> Response NUpdateBookingPartialColl(T payload, String token){
         Response response =
             given()
                 .baseUri(Base.baseLink)
                 .basePath("/booking/{id}")
                 .pathParam("id", 0)
-                .body(requestBody)
+                .body(payload)
             .when()
                 .patch();
 

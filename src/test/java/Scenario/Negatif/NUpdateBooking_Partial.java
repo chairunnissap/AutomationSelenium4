@@ -1,5 +1,8 @@
 package Scenario.Negatif;
 import api.example.base.Base;
+import api.example.model.request.ReqNUpdateBooking_Partial;
+import api.example.utils.Helper;
+
 import org.testng.annotations.Test;
 import ApiEngine.BookingCollectionAPI;
 import io.restassured.response.Response;
@@ -10,12 +13,8 @@ public class NUpdateBooking_Partial extends Base{
     @Test
     public void NUpdateBooking_PartialScen() {
 
-        String requestBody = "{\n" +
-                "    \"firstname\" : \"Chalay\",\n" +
-                "    \"lastname\" : \"Imoet\"\n" +
-                "}";
-
-        Response response = bookingCollectionAPI.NUpdateBookingPartialColl(requestBody, token);
+        ReqNUpdateBooking_Partial requestNUpdateBooking_Partial = Helper.findByUseCase("NUpdateBooking_Partial.json", "NUpdateBookingPartial1", ReqNUpdateBooking_Partial.class);
+        Response response = bookingCollectionAPI.NUpdateBookingPartialColl(requestNUpdateBooking_Partial, token);
 
         response.then().statusCode(405).log().all();
 

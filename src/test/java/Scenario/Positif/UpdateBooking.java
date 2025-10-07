@@ -5,43 +5,37 @@ import io.restassured.response.Response;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import api.example.base.Base;
+import api.example.model.request.ReqUpdateBooking;
+import api.example.model.response.ResUpdateBooking;
+import api.example.utils.Helper;
 
 public class UpdateBooking extends Base {
     public BookingCollectionAPI bookingCollectionAPI = new BookingCollectionAPI();
 
     @Test
     public void UpdateBookingScen() {
-        String requestBody = "{\n" +
-                "    \"firstname\" : \"Chairun\",\n" +
-                "    \"lastname\" : \"Puspitasari\",\n" +
-                "    \"totalprice\" : 222,\n" +
-                "    \"depositpaid\" : true,\n" +
-                "    \"bookingdates\" : {\n" +
-                "        \"checkin\" : \"2025-09-02\",\n" +
-                "        \"checkout\" : \"2025-09-18\"\n" +
-                "    },\n" +
-                "    \"additionalneeds\" : \"Gym\"\n" +
-                "}";
-
-        Response response = bookingCollectionAPI.UpdateBookingColl(requestBody, token);
+        ReqUpdateBooking requestUpdateBooking = Helper.findByUseCase("UpdateBooking.json", "UpdateBooking1", ReqUpdateBooking.class);
+        ResUpdateBooking expectUpdateBooking = Helper.findExpectedByUseCase("UpdateBooking.json", "UpdateBooking1", ResUpdateBooking.class);
+        Response response = bookingCollectionAPI.UpdateBookingColl(requestUpdateBooking, token);
 
         response.then().statusCode(200).log().all();
+        ResUpdateBooking resUpdateBooking = Helper.convertResponseToObject(response, ResUpdateBooking.class);
 
-        String firstname = response.jsonPath().getString("firstname");
-        String lastname = response.jsonPath().getString("lastname");
-        int totalprice = response.jsonPath().getInt("totalprice");
-        boolean depositpaid = response.jsonPath().getBoolean("depositpaid");
-        String checkin = response.jsonPath().getString("bookingdates.checkin");
-        String checkout = response.jsonPath().getString("bookingdates.checkout");
-        String additionalneeds = response.jsonPath().getString("additionalneeds");
+        String firstname = resUpdateBooking.firstname;
+        String lastname = resUpdateBooking.lastname;
+        int totalprice = resUpdateBooking.totalprice;
+        boolean depositpaid = resUpdateBooking.depositpaid;
+        String checkin = resUpdateBooking.bookingdates.checkin;
+        String checkout = resUpdateBooking.bookingdates.checkout;
+        String additionalneeds = resUpdateBooking.additionalneeds;
 
-        assertThat(firstname, equalTo("Chairun"));
-        assertThat(lastname, equalTo("Puspitasari"));
-        assertThat(totalprice, equalTo(222));
-        assertThat(depositpaid, equalTo(true));
-        assertThat(checkin, equalTo("2025-09-02"));
-        assertThat(checkout, equalTo("2025-09-18"));
-        assertThat(additionalneeds, equalTo("Gym"));
+        assertThat(firstname, equalTo(expectUpdateBooking.firstname));
+        assertThat(lastname, equalTo(expectUpdateBooking.lastname));
+        assertThat(totalprice, equalTo(expectUpdateBooking.totalprice));
+        assertThat(depositpaid, equalTo(expectUpdateBooking.depositpaid));
+        assertThat(checkin, equalTo(expectUpdateBooking.bookingdates.checkin));
+        assertThat(checkout, equalTo(expectUpdateBooking.bookingdates.checkout));
+        assertThat(additionalneeds, equalTo(expectUpdateBooking.additionalneeds));
         System.out.println("Update data baru: " + firstname + " " + lastname);
     }
 }

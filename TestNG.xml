@@ -9,17 +9,17 @@
                 <!-- <class name="RestAssuredImplTODO" /> -->
                 <class name="api.example.base.Base" />
                 <class name="Scenario.Positif.CreateBooking" />
-                <!-- <class name="Scenario.Negatif.NCreateBooking" /> -->
-                <!-- <class name="Scenario.Positif.DeleteBooking" /> -->
-                <!-- <class name="Scenario.Negatif.NDeleteBooking" /> -->
-                <!-- <class name="Scenario.Positif.GetBooking" /> -->
-                <!-- <class name="Scenario.Positif.GetBookingIds" /> -->
-                <!-- <class name="Scenario.Positif.GetBookingIdsByDate" /> -->
-                <!-- <class name="Scenario.Positif.GetBookingIdsByName" /> -->
-                <!-- <class name="Scenario.Positif.UpdateBooking_Partial" /> -->
-                <!-- <class name="Scenario.Negatif.NUpdateBooking_Partial" /> -->
-                <!-- <class name="Scenario.Positif.UpdateBooking" /> -->
-                <!-- <class name="Scenario.Negatif.NUpdateBooking" /> -->
+                <class name="Scenario.Negatif.NCreateBooking" />
+                <class name="Scenario.Positif.DeleteBooking" />
+                <class name="Scenario.Negatif.NDeleteBooking" />
+                <class name="Scenario.Positif.GetBooking" />
+                <class name="Scenario.Positif.GetBookingIds" />
+                <class name="Scenario.Positif.GetBookingIdsByDate" />
+                <class name="Scenario.Positif.GetBookingIdsByName" />
+                <class name="Scenario.Positif.UpdateBooking_Partial" />
+                <class name="Scenario.Negatif.NUpdateBooking_Partial" />
+                <class name="Scenario.Positif.UpdateBooking" />
+                <class name="Scenario.Negatif.NUpdateBooking" />
             </classes>
         </test>
     </suite>

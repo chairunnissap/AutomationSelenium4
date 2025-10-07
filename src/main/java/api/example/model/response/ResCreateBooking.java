@@ -3,21 +3,6 @@ package api.example.model.response;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ResCreateBooking {
-
-    // {
-    //     "bookingid": 4070,
-    //     "booking": {
-    //         "firstname": "Chairun",
-    //         "lastname": "Puspitasari",
-    //         "totalprice": 111,
-    //         "depositpaid": true,
-    //         "bookingdates": {
-    //             "checkin": "2025-09-01",
-    //             "checkout": "2025-09-17"
-    //         },
-    //         "additionalneeds": "Breakfast"
-    //     }
-    // }
     
     @JsonProperty("bookingid")
     public int bookingid;

@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
 
 public class Base {
     
@@ -29,6 +30,14 @@ public class Base {
                                             .header("Accept", "application/json")
                                             .header("Cookie", "token="+ token)
                                             .header("Authorization", "Basic " + token);
+    }
+    
+    @BeforeMethod
+    public static RequestSpecification getRequestSpec() {
+        return given()
+                .baseUri(baseLink)
+                .basePath("/booking")
+                .header("Content-Type", "application/json");
     }
 
     @AfterMethod

@@ -11,7 +11,6 @@ public class DeleteBooking extends Base{
 
     public BookingCollectionAPI bookingCollectionAPI = new BookingCollectionAPI();
 
-    // @Test(dependsOnMethods = {"CreateBooking"})
     @Test
     public void DeleteBookingScen() {
         Response response = bookingCollectionAPI.DeleteBookingColl(token);

@@ -1,0 +1,56 @@
+[
+    {
+        "usecase" : "NCreateBooking",
+        "payload" : {
+            "firstname": "Chairun",
+            "lastname": "Puspitasari",
+            "totalprice": 111,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-01",
+                "checkout": "2025-09-17"
+            },
+            "additionalneeds": "Breakfast"
+        },
+        "expectedValue": {
+            "booking": {
+                "firstname": "Icha",
+                "lastname": "Puspitasari",
+                "totalprice": 111,
+                "depositpaid": true,
+                "bookingdates": {
+                    "checkin": "2025-09-01",
+                    "checkout": "2025-09-17"
+                },
+                "additionalneeds": "Breakfast"
+            }
+        }
+    },
+    {   
+        "usecase" : "NCreateBooking2",
+        "payload" : {
+            "firstname": "Ikhfan",
+            "lastname": "Ali",
+            "totalprice": 222,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-18",
+                "checkout": "2025-09-19"
+            },
+            "additionalneeds": "Gym"
+        },
+        "expectedValue": {
+            "booking": {
+                "firstname": "Ali",
+                "lastname": "Ali",
+                "totalprice": 222,
+                "depositpaid": true,
+                "bookingdates": {
+                    "checkin": "2025-09-18",
+                    "checkout": "2025-09-19"
+                },
+                "additionalneeds": "Gym"
+            }
+        }
+    }
+]

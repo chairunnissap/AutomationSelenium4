@@ -14,11 +14,9 @@ public class GetBookingIds {
 
         response.then().statusCode(200);
 
-        // Ambil list bookingid
         List<Integer> bookingIds = response.jsonPath().getList("bookingid");
         System.out.println("Booking Ids: " + bookingIds);
 
-        // Assertion tambahan
         assertThat(bookingIds, notNullValue());
     }
 }

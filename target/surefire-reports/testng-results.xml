@@ -1,23 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-05T22:44:47 WIB" name="Annotation Execution Suite" finished-at="2025-10-05T22:44:49 WIB" duration-ms="1821">
+  <suite started-at="2025-10-08T05:46:08 WIB" name="Annotation Execution Suite" finished-at="2025-10-08T05:46:27 WIB" duration-ms="19571">
     <groups>
     </groups>
-    <test started-at="2025-10-05T22:44:47 WIB" name="MyTestGroup" finished-at="2025-10-05T22:44:49 WIB" duration-ms="1821">
+    <test started-at="2025-10-08T05:46:08 WIB" name="MyTestGroup" finished-at="2025-10-08T05:46:27 WIB" duration-ms="19571">
       <class name="api.example.base.Base">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:api.example.base.Base@dbf57b3]" started-at="2025-10-05T22:44:43 WIB" name="beforeSuite" finished-at="2025-10-05T22:44:47 WIB" duration-ms="3831" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:api.example.base.Base@7b9a4292]" started-at="2025-10-08T05:46:03 WIB" name="beforeSuite" finished-at="2025-10-08T05:46:08 WIB" duration-ms="4581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
       </class> <!-- api.example.base.Base -->
+      <class name="Scenario.Negatif.NDeleteBooking">
+        <test-method is-config="true" signature="getRequestSpec()[pri:0, instance:Scenario.Negatif.NDeleteBooking@49ec71f8]" started-at="2025-10-08T05:46:15 WIB" name="getRequestSpec" finished-at="2025-10-08T05:46:15 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestSpec -->
+        <test-method is-config="true" signature="setupRequestSpecification()[pri:0, instance:Scenario.Negatif.NDeleteBooking@49ec71f8]" started-at="2025-10-08T05:46:15 WIB" name="setupRequestSpecification" finished-at="2025-10-08T05:46:15 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRequestSpecification -->
+        <test-method signature="NDeleteBookingScen()[pri:0, instance:Scenario.Negatif.NDeleteBooking@49ec71f8]" started-at="2025-10-08T05:46:15 WIB" name="NDeleteBookingScen" finished-at="2025-10-08T05:46:16 WIB" duration-ms="1298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NDeleteBookingScen -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scenario.Negatif.NDeleteBooking@49ec71f8]" started-at="2025-10-08T05:46:16 WIB" name="afterMethod" finished-at="2025-10-08T05:46:16 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Scenario.Negatif.NDeleteBooking -->
       <class name="Scenario.Positif.CreateBooking">
-        <test-method signature="CreateBookingScen()[pri:0, instance:Scenario.Positif.CreateBooking@130c12b7]" started-at="2025-10-05T22:44:47 WIB" name="CreateBookingScen" finished-at="2025-10-05T22:44:49 WIB" duration-ms="1767" status="PASS">
+        <test-method signature="CreateBookingScen()[pri:0, instance:Scenario.Positif.CreateBooking@1189dd52]" started-at="2025-10-08T05:46:08 WIB" name="CreateBookingScen" finished-at="2025-10-08T05:46:10 WIB" duration-ms="2274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateBookingScen -->
       </class> <!-- Scenario.Positif.CreateBooking -->
+      <class name="Scenario.Positif.UpdateBooking">
+        <test-method is-config="true" signature="getRequestSpec()[pri:0, instance:Scenario.Positif.UpdateBooking@3febb011]" started-at="2025-10-08T05:46:25 WIB" name="getRequestSpec" finished-at="2025-10-08T05:46:25 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestSpec -->
+        <test-method is-config="true" signature="setupRequestSpecification()[pri:0, instance:Scenario.Positif.UpdateBooking@3febb011]" started-at="2025-10-08T05:46:25 WIB" name="setupRequestSpecification" finished-at="2025-10-08T05:46:25 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRequestSpecification -->
+        <test-method signature="UpdateBookingScen()[pri:0, instance:Scenario.Positif.UpdateBooking@3febb011]" started-at="2025-10-08T05:46:25 WIB" name="UpdateBookingScen" finished-at="2025-10-08T05:46:26 WIB" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateBookingScen -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scenario.Positif.UpdateBooking@3febb011]" started-at="2025-10-08T05:46:26 WIB" name="afterMethod" finished-at="2025-10-08T05:46:26 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Scenario.Positif.UpdateBooking -->
+      <class name="Scenario.Positif.GetBooking">
+        <test-method signature="GetBookingScen()[pri:0, instance:Scenario.Positif.GetBooking@1d2adfbe]" started-at="2025-10-08T05:46:16 WIB" name="GetBookingScen" finished-at="2025-10-08T05:46:17 WIB" duration-ms="1352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBookingScen -->
+      </class> <!-- Scenario.Positif.GetBooking -->
+      <class name="Scenario.Positif.GetBookingIds">
+        <test-method signature="GetBookingIdsScen()[pri:0, instance:Scenario.Positif.GetBookingIds@36902638]" started-at="2025-10-08T05:46:17 WIB" name="GetBookingIdsScen" finished-at="2025-10-08T05:46:19 WIB" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBookingIdsScen -->
+      </class> <!-- Scenario.Positif.GetBookingIds -->
+      <class name="Scenario.Positif.DeleteBooking">
+        <test-method is-config="true" signature="getRequestSpec()[pri:0, instance:Scenario.Positif.DeleteBooking@564fabc8]" started-at="2025-10-08T05:46:12 WIB" name="getRequestSpec" finished-at="2025-10-08T05:46:12 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestSpec -->
+        <test-method is-config="true" signature="setupRequestSpecification()[pri:0, instance:Scenario.Positif.DeleteBooking@564fabc8]" started-at="2025-10-08T05:46:12 WIB" name="setupRequestSpecification" finished-at="2025-10-08T05:46:12 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRequestSpecification -->
+        <test-method signature="DeleteBookingScen()[pri:0, instance:Scenario.Positif.DeleteBooking@564fabc8]" started-at="2025-10-08T05:46:12 WIB" name="DeleteBookingScen" finished-at="2025-10-08T05:46:15 WIB" duration-ms="2659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBookingScen -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scenario.Positif.DeleteBooking@564fabc8]" started-at="2025-10-08T05:46:15 WIB" name="afterMethod" finished-at="2025-10-08T05:46:15 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Scenario.Positif.DeleteBooking -->
+      <class name="Scenario.Negatif.NUpdateBooking">
+        <test-method is-config="true" signature="getRequestSpec()[pri:0, instance:Scenario.Negatif.NUpdateBooking@10e31a9a]" started-at="2025-10-08T05:46:26 WIB" name="getRequestSpec" finished-at="2025-10-08T05:46:26 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestSpec -->
+        <test-method is-config="true" signature="setupRequestSpecification()[pri:0, instance:Scenario.Negatif.NUpdateBooking@10e31a9a]" started-at="2025-10-08T05:46:26 WIB" name="setupRequestSpecification" finished-at="2025-10-08T05:46:26 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRequestSpecification -->
+        <test-method signature="NUpdateBookingScen()[pri:0, instance:Scenario.Negatif.NUpdateBooking@10e31a9a]" started-at="2025-10-08T05:46:26 WIB" name="NUpdateBookingScen" finished-at="2025-10-08T05:46:27 WIB" duration-ms="1340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NUpdateBookingScen -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scenario.Negatif.NUpdateBooking@10e31a9a]" started-at="2025-10-08T05:46:27 WIB" name="afterMethod" finished-at="2025-10-08T05:46:27 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Scenario.Negatif.NUpdateBooking -->
+      <class name="Scenario.Positif.GetBookingIdsByName">
+        <test-method signature="GetBookingIdsByNameScen()[pri:0, instance:Scenario.Positif.GetBookingIdsByName@8f4ea7c]" started-at="2025-10-08T05:46:21 WIB" name="GetBookingIdsByNameScen" finished-at="2025-10-08T05:46:22 WIB" duration-ms="1353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBookingIdsByNameScen -->
+      </class> <!-- Scenario.Positif.GetBookingIdsByName -->
+      <class name="Scenario.Negatif.NUpdateBooking_Partial">
+        <test-method is-config="true" signature="getRequestSpec()[pri:0, instance:Scenario.Negatif.NUpdateBooking_Partial@74fe5c40]" started-at="2025-10-08T05:46:23 WIB" name="getRequestSpec" finished-at="2025-10-08T05:46:23 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestSpec -->
+        <test-method signature="NUpdateBooking_PartialScen()[pri:0, instance:Scenario.Negatif.NUpdateBooking_Partial@74fe5c40]" started-at="2025-10-08T05:46:23 WIB" name="NUpdateBooking_PartialScen" finished-at="2025-10-08T05:46:25 WIB" duration-ms="1330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NUpdateBooking_PartialScen -->
+        <test-method is-config="true" signature="setupRequestSpecification()[pri:0, instance:Scenario.Negatif.NUpdateBooking_Partial@74fe5c40]" started-at="2025-10-08T05:46:23 WIB" name="setupRequestSpecification" finished-at="2025-10-08T05:46:23 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRequestSpecification -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scenario.Negatif.NUpdateBooking_Partial@74fe5c40]" started-at="2025-10-08T05:46:25 WIB" name="afterMethod" finished-at="2025-10-08T05:46:25 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Scenario.Negatif.NUpdateBooking_Partial -->
+      <class name="Scenario.Positif.UpdateBooking_Partial">
+        <test-method is-config="true" signature="getRequestSpec()[pri:0, instance:Scenario.Positif.UpdateBooking_Partial@436813f3]" started-at="2025-10-08T05:46:22 WIB" name="getRequestSpec" finished-at="2025-10-08T05:46:22 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestSpec -->
+        <test-method is-config="true" signature="setupRequestSpecification()[pri:0, instance:Scenario.Positif.UpdateBooking_Partial@436813f3]" started-at="2025-10-08T05:46:22 WIB" name="setupRequestSpecification" finished-at="2025-10-08T05:46:22 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRequestSpecification -->
+        <test-method signature="UpdateBooking_PartialScen()[pri:0, instance:Scenario.Positif.UpdateBooking_Partial@436813f3]" started-at="2025-10-08T05:46:22 WIB" name="UpdateBooking_PartialScen" finished-at="2025-10-08T05:46:23 WIB" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateBooking_PartialScen -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Scenario.Positif.UpdateBooking_Partial@436813f3]" started-at="2025-10-08T05:46:23 WIB" name="afterMethod" finished-at="2025-10-08T05:46:23 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Scenario.Positif.UpdateBooking_Partial -->
+      <class name="Scenario.Positif.GetBookingIdsByDate">
+        <test-method signature="GetBookingIdsByDateScen()[pri:0, instance:Scenario.Positif.GetBookingIdsByDate@223d2c72]" started-at="2025-10-08T05:46:19 WIB" name="GetBookingIdsByDateScen" finished-at="2025-10-08T05:46:21 WIB" duration-ms="1602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBookingIdsByDateScen -->
+      </class> <!-- Scenario.Positif.GetBookingIdsByDate -->
+      <class name="Scenario.Negatif.NCreateBooking">
+        <test-method signature="NCreateBookingScen()[pri:0, instance:Scenario.Negatif.NCreateBooking@36bc55de]" started-at="2025-10-08T05:46:10 WIB" name="NCreateBookingScen" finished-at="2025-10-08T05:46:12 WIB" duration-ms="1930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NCreateBookingScen -->
+      </class> <!-- Scenario.Negatif.NCreateBooking -->
     </test> <!-- MyTestGroup -->
   </suite> <!-- Annotation Execution Suite -->
 </testng-results>

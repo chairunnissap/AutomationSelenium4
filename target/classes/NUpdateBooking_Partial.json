@@ -1,0 +1,16 @@
+[
+    {
+        "usecase" : "NUpdateBookingPartial1",
+        "payload" : {
+            "firstname" : "Chalay",
+            "lastname" : "Imoet"
+            }
+    },
+    {
+        "usecase" : "NUpdateBookingPartial2",
+        "payload" : {
+            "firstname" : "iphan",
+            "lastname" : "Imoet"
+            }
+    }
+]

@@ -52,4 +52,19 @@ public class Helper {
             throw new RuntimeException("Failed to get payload from file: " + filePath, e); 
         }
     }
+
+    public static <T> T findExpectedByUseCase(String filePath, String usecase, Class<T> clazz) {
+        try {
+            JsonNode rootNode = mapper.readTree(new File(DATA_PATH + filePath));
+            for (JsonNode node : rootNode) {
+                if (node.get("usecase").asText().equals(usecase)) {
+                    JsonNode payloadNode = node.get("expectedValue");
+                    return mapper.treeToValue(payloadNode, clazz);  
+                }
+            }
+            throw new RuntimeException("Usecase not found: " + usecase);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to get payload from file: " + filePath, e); 
+        }
+    }
 }
